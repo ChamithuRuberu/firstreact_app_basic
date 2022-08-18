@@ -10,7 +10,7 @@ class Counterclass extends React.Component{
     }
     increment(){
         this.setState({
-            number: this.state.number+1
+            number: this.state.number+2
         })
     }
     render() {
