@@ -1,6 +1,6 @@
 import React from "react";
 
-class Counterclass extends React.Component{
+class ClassBaseComponent extends React.Component{
     constructor() {
         super();
         this.increment=this.increment.bind(this)
@@ -8,18 +8,22 @@ class Counterclass extends React.Component{
             number:0
         }
     }
-    increment(){
+
+    increment(){                                     //classbase component
         this.setState({
             number: this.state.number+1
         })
     }
+
+
     render() {
         return(
             <div>
+                <h3>classbase component</h3>
                 <h1>Counter={this.state.number}</h1>
                 <button onClick={this.increment}>Increment</button>
             </div>
         )
     }
 }
-export default Counterclass;
+export default ClassBaseComponent;
